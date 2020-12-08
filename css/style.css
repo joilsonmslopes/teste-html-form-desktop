@@ -5,6 +5,10 @@
     font-family: "Open Sans", sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     width: 100%;
     max-width: 1280px;
@@ -15,7 +19,7 @@ header {
     display: flex;
     justify-content: center;
     border-bottom: 1px solid #E5E5E5;
-    padding: 8px 2%;
+    padding: 12px 2%;
 }
 
 header .logo {
@@ -67,5 +71,24 @@ header .title .texto h2 {
 }
 
 header .title .texto p {
-    font-size: 14;
+    font-size: 14px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 12px 2%;
+}
+
+nav .icon-home {
+    margin-right: 5px;
+}
+
+nav .path {
+    margin-left: 5px;
+}
+
+nav .path a {
+    color: #040404;
 }
