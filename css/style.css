@@ -82,13 +82,32 @@ nav {
 }
 
 nav .icon-home {
-    margin-right: 5px;
-}
-
-nav .path {
-    margin-left: 5px;
+    margin: 0 10px;
 }
 
 nav .path a {
     color: #040404;
+}
+
+section.produto {
+    display: flex;
+    align-items: center;
+    padding: 12px 2%;
+}
+
+section.produto .descricao {
+    margin-left: 10px;
+}
+
+section.produto .descricao h2 {
+    font-size: 16px;
+}
+
+section.produto .descricao p {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+section.produto .descricao p:last-child {
+    letter-spacing: -0.5px;
 }
