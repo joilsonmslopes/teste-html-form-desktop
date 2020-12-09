@@ -9,6 +9,10 @@ a {
     text-decoration: none;
 }
 
+input:focus {
+    outline: none;
+}
+
 .container {
     width: 100%;
     max-width: 1280px;
@@ -77,7 +81,7 @@ header .title .texto p {
 nav {
     display: flex;
     align-items: center;
-    margin: 10px 0;
+    margin-top: 10px;
     padding: 12px 2%;
 }
 
@@ -89,25 +93,185 @@ nav .path a {
     color: #040404;
 }
 
-section.produto {
+div.produto {
     display: flex;
     align-items: center;
     padding: 12px 2%;
+    margin: 30px 0;
 }
 
-section.produto .descricao {
+div.produto .descricao {
     margin-left: 10px;
 }
 
-section.produto .descricao h2 {
+div.produto .descricao h2 {
     font-size: 16px;
 }
 
-section.produto .descricao p {
+div.produto .descricao p {
     font-size: 14px;
     line-height: 17px;
 }
 
-section.produto .descricao p:last-child {
+div.produto .descricao p:last-child {
     letter-spacing: -0.5px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main .forms {
+    width: 100%;
+    margin: 30px 0;
+    padding: 12px 2%;
+}
+
+main .forms .form-endereco form {
+    display: grid;
+    width: 100%;
+    max-width: 567px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+main .forms .form-endereco form input {
+    width: 100%;
+    height: 35px;
+    border-radius: 30px;
+    border: 0;
+    box-shadow: 0 3px 6px #d8d8d8;
+    padding: 3px 8px
+}
+
+
+main .forms .form-cartao input[type=number] {
+    width: 100%;
+    max-width: 201px;
+    height: 35px;
+    border-radius: 30px;
+    margin-right: 10px;
+    border: 0;
+    box-shadow: 0 3px 6px #d8d8d8;
+    padding: 3px 8px
+}
+
+main .forms .form-cartao input[type=text] {
+    width: 100%;
+    max-width: 446px;
+    height: 35px;
+    border-radius: 30px;
+    border: 0;
+    box-shadow: 0 3px 6px #d8d8d8;
+    padding: 3px 8px
+}
+
+main .forms .form-cartao select {
+    width: 100%;
+    max-width: 116px;
+    height: 35px;
+    border-radius: 30px;
+    margin-right: 10px;
+    border: 0;
+    box-shadow: 0 3px 6px #d8d8d8;
+    padding: 3px 8px
+}
+
+main .forms .form-cartao .input-wrapper {
+    display: flex;
+    margin: 10px;
+}
+
+main .forms .form-cartao{
+    padding: 10px;
+    background-color: #F4F4F4;
+}
+
+main .forms .cartao {
+    width: 180px;
+    height: 43px;
+    margin: 40px 0;
+    background-color: #444444;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+main .forms .cartao h2 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+main .forms .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+main .forms .button input[type=submit] {
+    width: 100%;
+    max-width: 448px;
+    height: 35px;
+    background-color: #83D09A;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 22px;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+main .descricao-produto {
+    width: 100%;
+}
+
+main .descricao-produto>img {
+    width: 100%;
+    max-width: 462px;
+}
+
+main .descricao-produto .comentarios {
+    width: 100%;
+    max-width: 518px;
+    background-color: #F4F4F4;
+    padding: 10px;
+}
+
+main .descricao-produto .comentarios h2 {
+    font-size: 18px;
+}
+
+main .descricao-produto .comentarios p {
+    font-size: 16px;
+}
+
+main footer {
+    width: 100%;
+    max-width: 518px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    background-color: #f4f4f4;
+}
+
+main footer .quantidade-pessoas {
+    width: 48px;
+    height: 44px;
+    background-color: #F90303;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+main footer h2 {
+    font-size: 18px;
 }
