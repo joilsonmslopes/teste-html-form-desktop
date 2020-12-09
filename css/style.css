@@ -188,6 +188,10 @@ main .forms .form-cartao{
     background-color: #F4F4F4;
 }
 
+main .forms .form-cartao form .input-wrapper:last-child select {
+    border-radius: 6px;
+}
+
 main .forms .cartao {
     width: 180px;
     height: 43px;
@@ -244,10 +248,12 @@ main .descricao-produto .comentarios {
 
 main .descricao-produto .comentarios h2 {
     font-size: 18px;
+    margin-top: 10px;
 }
 
 main .descricao-produto .comentarios p {
     font-size: 16px;
+    margin: 10px 0;
 }
 
 main footer {
